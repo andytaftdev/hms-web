@@ -1,6 +1,6 @@
-<nav id="navbar" class="flex w-screen px-8 lg:px-32 max-w-screen justify-between text-[16px] items-center py-5 text-nowrap">
-    <img  src="storage/logo.svg"  alt="">
-    <div id="menu"  class="flex lg:flex-row flex-col  lg:w-fit w-full inset-0 px-8  am lg:h-fit h-screen lg:bg-transparent bg-white lg:relative fixed gap-8 lg:gap-10 items-start top-0 lg:translate-y-0 -translate-y-full text-[#066434] font-medium">
+<nav id="navbar" class="flex w-screen px-8 lg:px-32 max-w-screen justify-between text-[16px] items-center py-4  bg-white shadow-gray-300 shadow-sm z-20 text-nowrap">
+    <img  src="storage/logo.svg"  alt="" class="h-12">
+    <div id="menu"  class="flex lg:flex-row flex-col z-50  lg:w-fit w-full inset-0 px-8  am lg:h-fit h-screen lg:bg-transparent bg-white lg:relative fixed gap-8 lg:gap-10 items-start top-0 lg:translate-y-0 -translate-y-full text-[#066434] font-medium">
 
 
         <div class="w-full flex justify-end mt-6 ">
@@ -10,16 +10,16 @@
         </div>
 
 
-        <a href="#">
+        <a href="/">
             HOME
         </a>
-        <a href="#">
+        <a href="/tentang">
             TENTANG KAMI
         </a>
-        <a href="#">
+        <a href="/layanan">
             LAYANAN
         </a>
-        <a href="#">
+        <a href="kontak">
             KONTAK
         </a>
         <a href="" id="gabung" class="px-6 text-center rounded-full w-full align-bottom  text-[16px] hidden font-semibold text-white bg-[#066434] p-4 ">
@@ -27,7 +27,7 @@
         </a>
 
     </div>
-    <a href="" class="lg:flex hidden font-semibold text-white bg-[#066434] p-4 rounded-lg">
+    <a href="" class="lg:flex hidden font-semibold text-white bg-[#066434] px-4 py-3 rounded-lg">
         BERGABUNG
     </a>
     <svg id="burger" class="lg:hidden flex" width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -36,25 +36,30 @@
 </nav>
 
 <script>
-    const button =document.querySelector('#burger');
-const back =document.querySelector('#back');
-const plan = document.querySelector("#button-plan");
+    const button = document.querySelector("#burger");
+const back = document.querySelector("#back");
+const menu = document.querySelector("#menu");
+const gabung = document.querySelector("#gabung");
 const nav = document.querySelector("#navbar");
 
-button.addEventListener('click', () => {
-    const menu = document.querySelector('#menu');
-    const gabung = document.querySelector('#gabung');
-    menu.classList.remove('-translate-y-full');
-    back.classList.remove('hidden');
-    gabung.classList.remove('hidden');
-
-})
-back.addEventListener('click', () => {
-    const menu = document.querySelector('#menu');
-    menu.classList.add('-translate-y-full');
-})
-plan.addEventListener("click", function () {
-    const menu = document.querySelector('#menu');
-    menu.classList.add('-translate-y-full');
+button.addEventListener("click", () => {
+    menu.classList.remove("-translate-y-full");
+    back.classList.remove("hidden");
+    gabung.classList.remove("hidden");
 });
+
+back.addEventListener("click", () => {
+    menu.classList.add("-translate-y-full");
+    back.classList.add("hidden");
+    gabung.classList.add("hidden");
+});
+
+window.addEventListener("scroll", function () {
+    if (window.scrollY > 600) {
+        nav.classList.add("fixed", "top-0", "left-0", "right-0", "bg-white", "shadow-md");
+    } else {
+        nav.classList.remove("fixed", "top-0", "left-0", "right-0", "bg-white", "shadow-md");
+    }
+});
+
 </script>
