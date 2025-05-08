@@ -51,6 +51,9 @@ class FortifyServiceProvider extends ServiceProvider
         Fortify::loginView(function () {
             return view('login');
         });
+        Fortify::registerView(function () {
+            return view('signup');
+        });
         Fortify::authenticateUsing(function ($request) {
             $credentials = $request->only('username', 'password');
 

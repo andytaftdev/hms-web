@@ -1,5 +1,5 @@
 <nav id="navbar" class="flex w-screen px-8 lg:px-32 max-w-screen justify-between text-[16px] items-center py-4  bg-white shadow-gray-300 shadow-sm z-20 text-nowrap">
-    <img  src="storage/logo.svg"  alt="" class="h-12">
+    <a href="/"><img  src="storage/logo.svg"  alt="" class="h-12"></a>
     <div id="menu"  class="flex lg:flex-row flex-col z-50  lg:w-fit w-full inset-0 px-8  am lg:h-fit h-screen lg:bg-transparent bg-white lg:relative fixed gap-8 lg:gap-10 items-start top-0 lg:translate-y-0 -translate-y-full text-[#066434] font-medium">
 
 
@@ -22,12 +22,12 @@
         <a href="kontak">
             KONTAK
         </a>
-        <a href="" id="gabung" class="px-6 text-center rounded-full w-full align-bottom  text-[16px] hidden font-semibold text-white bg-[#066434] p-4 ">
+        <a href="/register" id="gabung" class="px-6 text-center rounded-full w-full align-bottom  text-[16px] hidden font-semibold text-white bg-[#066434] p-4 ">
             BERGABUNG
         </a>
 
     </div>
-    <a href="" class="lg:flex hidden font-semibold text-white bg-[#066434] px-4 py-3 rounded-lg">
+    <a href="/register" class="lg:flex hidden font-semibold text-white bg-[#066434] px-4 py-3 rounded-lg">
         BERGABUNG
     </a>
     <svg id="burger" class="lg:hidden flex" width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">

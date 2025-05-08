@@ -30,7 +30,7 @@
                 <p class="font-bold text-[48px] leading-[58px]  text-[#066434] ">Kenali Perjalan Kami</p>
                 <p class="font-normal text-16px] leading-6  text-[#637381] ">HMS telah menjadi mitra andalan sejak tahun 2022 dalam menyediakan layanan maklon produk herbal berkualitas. Berkomitmen untuk memberikan solusi kesehatan alami, HMS hadir untuk membantu para pelaku bisnis menciptakan produk herbal yang bermanfaat bagi masyarakat luas.<br><br>
                     Kami berkomitmen untuk membuka peluang menyebarkan manfaat kesehatan alami ke seluruh penjuru negeri, membawa keberkahan dan kesejahteraan bagi banyak orang melalui kolaborasi yang harmonis.</p>
-                <a href="" class="py-3 rounded-full px-6 mt-5 w-fit bg-[#066434] font-medium leading-6 text-[16px] text-white">
+                <a href="/tentang" class="py-3 rounded-full px-6 mt-5 w-fit bg-[#066434] font-medium leading-6 text-[16px] text-white">
                     SELENGKAPNYA ->
                 </a>
             </div>
@@ -72,7 +72,7 @@
                 <p class="font-bold text-[48px] leading-[58px]  text-[#066434] ">Ciptakan Produk Herbal Berkualitas Tinggi!</p>
                 <p class="font-normal text-16px] leading-6  text-[#637381] ">Sudah siap membawa manfaat kesehatan alami untuk masyarakat luas? Bergabunglah bersama HMS, mitra terpercaya sejak 2022 dalam layanan maklon produk herbal berkualitas.<br><br>
                  Dengan pengalaman dan komitmen kuat, kami siap mendukung bisnis Anda menghadirkan suplemen kesehatan dan obat tradisional yang aman, efektif, dan bersertifikasi.</p>
-                <a href="" class="py-3 rounded-full px-6 mt-5 w-fit bg-[#066434] font-medium leading-6 text-[16px] text-white">
+                <a href="/layanan" class="py-3 rounded-full px-6 mt-5 w-fit bg-[#066434] font-medium leading-6 text-[16px] text-white">
                     SELENGKAPNYA ->
                 </a>
             </div>
@@ -92,7 +92,7 @@
                 <p class="font-bold text-[48px] leading-[58px]  text-[#066434] ">Wujudkan Produk Impian
                     Dengan Teknologi Terbaik!</p>
                 <p class="font-normal text-16px] leading-6  text-[#637381] ">Perusahaan kami didukung oleh teknologi mutakhir, tim ahli yang berpengalaman, dan komitmen terhadap standar kualitas tinggi dalam setiap tahap produksi</p>
-                <a href="" class="py-3 rounded-full px-6 mt-5 w-fit bg-[#066434] font-medium leading-6 text-[16px] text-white">
+                <a href="/tentang" class="py-3 rounded-full px-6 mt-5 w-fit bg-[#066434] font-medium leading-6 text-[16px] text-white">
                     SELENGKAPNYA ->
                 </a>
             </div>
@@ -147,4 +147,4 @@
 
 
 
-@endsection
+@ends

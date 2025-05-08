@@ -18,13 +18,14 @@ return new class extends Migration
             $table->string('npwp');
             $table->enum('role', ['admin', 'user','karyawan'])->default('user');
             $table->string('email')->unique();
+            $table->boolean('is_approved')->default(false);
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
             $table->rememberToken();
             $table->timestamps();
         });
 
-        Schema::create('password_reset_tokens', function (Blueprint $table) {
+        Schema::create('password_reset_tokewns', function (Blueprint $table) {
             $table->string('email')->primary();
             $table->string('token');
             $table->timestamp('created_at')->nullable();

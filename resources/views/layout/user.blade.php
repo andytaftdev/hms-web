@@ -69,10 +69,13 @@
             <div class="flex w-full gap-4 items-center">
                 <!-- Logout -->
                 <div class="h-full w-2 rounded-e-md bg-[#066434] transition-all opacity-0"></div>
-                <a href="{{ route('dashboard.index') }}"
-                    class="block w-full px-10 py-4 mx-6 rounded-md transition-all text-black">
-                    Logout
-                </a>
+                <form method="POST" action="{{ route('logout') }}" class="block w-full px-10 py-4 mx-6">
+                    @csrf
+                    <button type="submit" class="w-full text-left text-black rounded-md transition-all">
+                        Logout
+                    </button>
+                </form>
+
             </div>
         </nav>
     </div>
